@@ -9,6 +9,23 @@ class Book extends Model
 {
     use SoftDeletes;
 
+    protected $fillable = [
+        'category_id',
+        'title',
+        'author',
+        'isbn',
+        'description',
+        'published_date',
+        'pages',
+        'price',
+        'available_copies',
+        'total_copies',
+        'publisher',
+        'created_by',
+        'updated_by',
+        'deleted_by',
+    ];
+
     public function Category(){
         return $this->belongsTo(Category::class);
     }
