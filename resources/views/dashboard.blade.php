@@ -14,4 +14,6 @@
             </div>
         </div>
     </div>
+
+    <livewire:dashboard/>
 </x-app-layout>
